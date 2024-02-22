@@ -49,7 +49,7 @@ jobs:
 
     - name: Scan the image using sysdig-cli-scanner
       env:
-        SECURE_API_TOKEN: ${{ secrets.SECURE_SECURE_TOKEN }}
+        SECURE_API_TOKEN: ${{ secrets.SYSDIG_SECURE_TOKEN }}
       run: |
         ${GITHUB_WORKSPACE}/cache/sysdig-cli-scanner \
           --apiurl https://app.au1.sysdig.com \
